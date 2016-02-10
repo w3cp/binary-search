@@ -20,6 +20,7 @@ info = sorted(info)
 print info
 while True:
     X = int(raw_input())
-    lowerbound = searchUpperBound(info, X)
-    info.insert(lowerbound, X)
+    upperbound = searchUpperBound(info, X)
+    info.insert(upperbound, X)
     print "New array: ", info
+    print "Upper bound index: ", upperbound
